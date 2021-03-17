@@ -16,7 +16,7 @@ const App: React.FC = () => {
     setLanguage(e.target.value);
   };
 
-  const switchTemplate = () => {
+  const switchTemplate = (language:string) => {
         switch (language) {
           case "en":
             setCurrentTemplate(enTemplate);
@@ -36,7 +36,7 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    switchTemplate();
+    switchTemplate(language);
   }, [language]);
 
   return (

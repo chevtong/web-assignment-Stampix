@@ -3,14 +3,14 @@ export const enTemplate:Template = {
       title: "For customer",
       slogan: "Install the Stampix App",
       slogan2: "and order prints in just a few clicks",
-      button: "start printing",
+      buttonText: "start printing",
     },
   
     business: {
       title: "For business",
       slogan: "Build emotional loyalty",
       slogan2: "and brand engagement",
-      button: "stampix for business",
+      buttonText: "stampix for business",
     },
   };
   
@@ -19,13 +19,13 @@ export const enTemplate:Template = {
       title: "Pour le client",
       slogan: "Installez l'application Stampix",
       slogan2: "et commandez des tirages en quelques clics" ,
-      button: "commencer l'impression",
+      buttonText: "commencer l'impression",
     },
     business: {
       title: "Pour le business",
       slogan: "Construire une loyauté émotionnelle",
       slogan2: "et engagement de la marque",
-      button: "stampix pour les affaires",
+      buttonText: "stampix pour les affaires",
     },
   };
   
@@ -34,12 +34,12 @@ export const enTemplate:Template = {
       title: "Voor klant",
       slogan: "Installeer de Stampix-app",
       slogan2: "en bestel afdrukken in slechts een paar klikken",
-      button: "begin met afdrukken",
+      buttonText: "begin met afdrukken",
     },
     business: {
       title: "Voor zaken",
       slogan: "Bouw emotionele loyaliteit op",
       slogan2: "en merkbetrokkenheid",
-      button: "stampix voor bedrijven",
+      buttonText: "stampix voor bedrijven",
     },
   };

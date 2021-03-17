@@ -16,7 +16,7 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate }) => {
                     <h3>{currentTemplate.customer.slogan2}</h3>
                     <a href="https://stampix.com">
                         <button className="home-button">
-                            {currentTemplate.customer.button}
+                            {currentTemplate.customer.buttonText}
                         </button>
                     </a>
                 </div>
@@ -34,7 +34,7 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate }) => {
                     <h3>{currentTemplate.business.slogan2}</h3>
                     <a href="https://business.stampix.com">
                         <button className="home-button">
-                            {currentTemplate.business.button}
+                            {currentTemplate.business.buttonText}
                         </button>
                     </a>
                 </div>

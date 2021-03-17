@@ -5,14 +5,14 @@ type Template = {
       title: string,
       slogan: string,
       slogan2: string,
-      button: string,
+      buttonText: string,
     },
   
     business: {
       title: string,
       slogan:string,
       slogan2: string,
-      button: string,
+      buttonText: string,
     },
   };
   

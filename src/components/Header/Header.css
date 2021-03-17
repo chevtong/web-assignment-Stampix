@@ -1,69 +1,64 @@
 nav {
-    width: 72%;
-    margin: auto;
-    height: 20vh;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    align-items: center;
-  }
-  
-  img.nav-logo {
-    height: 70px;
-  }
-  
-  .nav-languages-choice {
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-lang-button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18.61px;
-    font-family: futura;
-  }
-  .nav-lang-button:hover {
-    color: #b8e3be;
-  }
-  .nav-lang-button:focus {
-    outline: none;
-  }
-  .active {
-    color: #b8e3be;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    nav {
-      grid-template-columns: 85% 15%;
-    }
-  }
-  @media only screen and (max-width: 550px) {
-    nav {
-      grid-template-columns: 80% 20%;
-    }
-    .nav-lang-button {
-      font-size: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 425px) {
-    nav{
-      grid-template-columns: 100%;
-     } 
-     .nav-languages-choice {
-      justify-content: space-around;
-     }
-  }
+  width: 72%;
+  margin: auto;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  align-items: center;
+}
 
-  @media only screen and (max-width: 320px) {
-   nav{
-    grid-template-columns: 100%;
-   } 
-   
+.nav-logo {
+  height: 70px;
+}
+
+.nav-languages-choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-lang-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.61px;
+  font-family: futura;
+}
+.nav-lang-button:hover {
+  color: #b8e3be;
+}
+.nav-lang-button:focus {
+  outline: none;
+}
+
+.active {
+  color: #b8e3be;
 }
 
 
-  
+@media only screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: 85% 15%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  nav {
+    grid-template-columns: 80% 20%;
+  }
+  .nav-lang-button {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    grid-template-columns: 100%;
+  }
+  .nav-languages-choice {
+    justify-content: space-around;
+  }
+}
+
+

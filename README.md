@@ -1,47 +1,36 @@
-## Typescript Version
+# Stampix Web Assignment
 
-WIP: 
-- fix the problems in codes
-- css for page
-- edit readme
+It is my very first assignment built with Typescript and React.
+<br><br>
+As a screening assignment, I do not have a lot of time to pick up the new language. My codes may not be sophisticated,  nor perfect, but this assessment opens the door for me to learn about TypeScript. 
 
-[Original repo](https://github.com/stampix/web-assignment)
-<<<<<<< HEAD
-=======
+The requirements and objectives are listed in the [original repo](https://github.com/stampix/web-assignment) from Stampix.
+<br><br>
 
->>>>>>> 3b6c1a4b3cefc52522a296e9247216f83c9d2e85
-<!-- # Stampix Web Assignment
+## My Work Flow: 
+1. Set up components folder to store different parts for the page, and create types.d.ts file to define the type of props
+2. Create 2 states `language` and `currentTemplate` to allow users to switch between languages and dynamically render the text template. 
+3. Add `isSwitching` state as Boolean to add and remove class for the UI display
+4. Work on responsiveness to provide an optimal user interface for different screen size
+<br><br>
 
-**Important**: You can choose any technology stack you want, this repo contains a scaffolded web app with [Create React App](https://github.com/facebook/create-react-app).
-We will be evaluating the quality of your project, how you do it, is entirely up to you :)
-
-## Goal
-
-Create a triage screen for our website, where we separate consumer vs. business clients.
-You can find the mockups on [Figma](https://www.figma.com/file/9OwDsbySKMVa78EKf4p9XS/Web-Assignment).
-
-![Saving Goal Plan Mockup Desktop](https://github.com/stampix/web-assignment/blob/master/mockup/desktop.png)
+## Structure:
+<img src="./src/assets/images/structure.png" width="200" />
+<br>
 
 
-## Requirements
-- The language buttons on top should update the copy. English should be in there, add at least one other language. We won't be evaluating the translation, of course
-- The 2 buttons should redirect to, in order:
-    1. https://stampix.com
-    2. https://business.stampix.com
-- The webpage should be made responsive. Seeing as the design is not complex, the mobile version can be a vertically stacked variant of the design
-- Feel free to give your own twist to the page
-    
-## Testing
-Language switching should be tested, anything else is optional. Quality over quantity!
 
-## Evaluation
-We will mainly check:
-- The visuals of your implementation and how it relates to the mockup
-- The quality of your code. Think best practices, cleanliness, readability, ...
+Src
+- Assets
+    - fonts: 2 different fonts for the text
+    - images: logos and images are located in this folder
+- Components
+    - Header: navbar with logo and language switch buttons, 
+    - Home: the main part of text display and images
+    - Template: store the translation template of different languages
+- types.d.ts: store all the types and use them in components
+<br><br>
+### Tools:
+TypeScript &bull; React &bull; Visual Studio Code 
 
-## Delivery
-Push your solution to your Git platform of choice, as long as it's public. Send us a link :)
 
-## Using this pre-made repo
-
-If you wanna make use of this repo and you're not familiar with CRA, check out their [docs](https://create-react-app.dev/docs/getting-started). -->

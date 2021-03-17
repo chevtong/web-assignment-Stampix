@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import phoneImg from "../assets/images/phone.png";
-import orangeLogo from "../assets/images/orange.png";
-import playmobilLogo from "../assets/images/playmobil.png";
-import edfLogo from "../assets/images/edf.png";
+import phoneImg from "../../assets/images/phone.png";
+import orangeLogo from "../../assets/images/orange.png";
+import playmobilLogo from "../../assets/images/playmobil.png";
+import edfLogo from "../../assets/images/edf.png";
 
 interface HomeProps {
     currentTemplate: Template;
@@ -15,11 +15,7 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate, isSwitching }) => {
     return (
         <div className="home">
             <div className="consumers">
-                <div
-                    className={
-                        isSwitching ? "right-switch-text consumer-text" : "consumer-text"
-                    }
-                >
+                <div className={isSwitching ? "right-switch-text consumer-text" : "consumer-text"}>
                     <p>{currentTemplate.customer.title}</p>
                     <div className="home-slogan">
                         <h3>{currentTemplate.customer.slogan}</h3>

@@ -5,17 +5,18 @@ import {enTemplate, frTemplate, nlTemplate} from "./components/Templates/Templat
 
 import './App.css';
 
-const initialLang: string = "en";
 
 const App: React.FC = () => {
 
-  const [language, setLanguage] = useState<language>(initialLang);
+  const [language, setLanguage] = useState<language>("en");
   const [currentTemplate, setCurrentTemplate] = useState<Template>(enTemplate);
   const [isSwitching, setIsSwithcing] = useState<isSwitching>(false)
+
 
   useEffect(() => {
 
     switchTemplate(language);
+
     const timer = setTimeout(() => {
       setIsSwithcing(!true);
     }, 800);
@@ -23,12 +24,17 @@ const App: React.FC = () => {
 
   }, [language]);
 
+
   const switchLanguage: switchLanguage = (e) => {
+
     setLanguage(e.target.value);
+
     setIsSwithcing(true)
   };
 
+
   const switchTemplate = (language:string) => {
+
         switch (language) {
           case "en":
             setCurrentTemplate(enTemplate);
@@ -47,6 +53,7 @@ const App: React.FC = () => {
         }
   };
 
+  
   return (
     <div className="App">
       <React.Fragment>

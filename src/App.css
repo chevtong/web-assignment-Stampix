@@ -1,9 +1,9 @@
 @font-face{
-    src: url(./components/assets/fonts/futura.ttf);
+    src: url(./assets/fonts/futura.ttf);
     font-family: futura;
   }
   @font-face{
-    src: url(./components/assets/fonts/ConduitITCStd-Regular.otf);
+    src: url(./assets/fonts/ConduitITCStd-Regular.otf);
     font-family: ConduitITCStd;
   }
   
@@ -14,7 +14,7 @@
   
   body{
     font-family: futura;
-    background-image: url('./components/assets/images/background.png');
+    background-image: url('./assets/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

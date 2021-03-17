@@ -1,5 +1,7 @@
 type switchLanguage = (event:event) => void;
 
+type isSwitching = Boolean;
+
 type Template = {
     customer: {
       title: string,

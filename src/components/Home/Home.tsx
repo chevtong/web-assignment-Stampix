@@ -1,10 +1,16 @@
 import React from "react";
+import "./Home.css";
+import phoneImg from "../assets/images/phone.png";
+import orangeLogo from "../assets/images/orange.png";
+import playmobilLogo from "../assets/images/playmobil.png";
+import edfLogo from "../assets/images/edf.png";
 
 interface HomeProps {
     currentTemplate: Template;
+    isSwitching: isSwitching;
 }
 
-export const Home: React.FC<HomeProps> = ({ currentTemplate }) => {
+export const Home: React.FC<HomeProps> = ({ currentTemplate, isSwitching }) => {
 
     return (
         <div className="home">
@@ -19,10 +25,28 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate }) => {
                             {currentTemplate.customer.buttonText}
                         </button>
                     </a>
+
+                    <img
+            className="consumer-phone-img"
+            src={phoneImg}
+            alt="Phone_image"
+          />
                 </div>
 
                 <div className="consumer-img-container">
-                    {/* image here */}
+                <div className="img-container">
+            <img className="business-logos" src={orangeLogo} alt="Orange" />
+          </div>
+          <div className="img-container">
+            <img
+              className="business-logos"
+              src={playmobilLogo}
+              alt="Playmobil"
+            />
+          </div>
+          <div className="img-container">
+            <img className="business-logos" src={edfLogo} alt="EDF" />
+          </div>
                 </div>
             </div>
 

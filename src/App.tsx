@@ -13,6 +13,15 @@ const App: React.FC = () => {
   const [currentTemplate, setCurrentTemplate] = useState(enTemplate);
   const [isSwitching, setIsSwithcing] = useState<boolean>(false)
 
+  useEffect(() => {
+
+    switchTemplate(language);
+    const timer = setTimeout(() => {
+      setIsSwithcing(!true);
+    }, 800);
+    return () => clearTimeout(timer);
+
+  }, [language]);
 
   const switchLanguage: switchLanguage = (e) => {
     setLanguage(e.target.value);
@@ -38,19 +47,11 @@ const App: React.FC = () => {
         }
   };
 
-  useEffect(() => {
-    switchTemplate(language);
-    const timer = setTimeout(() => {
-      setIsSwithcing(!true);
-    }, 800);
-    return () => clearTimeout(timer);
-  }, [language]);
-
   return (
     <div className="App">
       <React.Fragment>
         <Header switchLanguage={switchLanguage} />
-        <Home currentTemplate={currentTemplate}/>
+        <Home currentTemplate={currentTemplate} isSwitching={isSwitching}/>
       </React.Fragment>
     </div>
   );

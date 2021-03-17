@@ -1,4 +1,4 @@
-# Stampix Web Assignment
+<!-- # Stampix Web Assignment
 
 **Important**: You can choose any technology stack you want, this repo contains a scaffolded web app with [Create React App](https://github.com/facebook/create-react-app).
 We will be evaluating the quality of your project, how you do it, is entirely up to you :)
@@ -32,4 +32,4 @@ Push your solution to your Git platform of choice, as long as it's public. Send 
 
 ## Using this pre-made repo
 
-If you wanna make use of this repo and you're not familiar with CRA, check out their [docs](https://create-react-app.dev/docs/getting-started).
+If you wanna make use of this repo and you're not familiar with CRA, check out their [docs](https://create-react-app.dev/docs/getting-started). -->

@@ -9,11 +9,14 @@ const initialLang: string = "en";
 
 const App: React.FC = () => {
 
-  const [language, setLanguage] = useState(initialLang);
+  const [language, setLanguage] = useState<string>(initialLang);
   const [currentTemplate, setCurrentTemplate] = useState(enTemplate);
+  const [isSwitching, setIsSwithcing] = useState<boolean>(false)
+
 
   const switchLanguage: switchLanguage = (e) => {
     setLanguage(e.target.value);
+    setIsSwithcing(true)
   };
 
   const switchTemplate = (language:string) => {
@@ -37,6 +40,10 @@ const App: React.FC = () => {
 
   useEffect(() => {
     switchTemplate(language);
+    const timer = setTimeout(() => {
+      setIsSwithcing(!true);
+    }, 800);
+    return () => clearTimeout(timer);
   }, [language]);
 
   return (

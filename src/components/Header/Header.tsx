@@ -4,8 +4,8 @@ import logo from "../../assets/images/logo.png";
 
 
 interface HeaderProps {
-    switchLanguage: switchLanguage;
     language:language;
+    switchLanguage: switchLanguage;
 }
 
 export const Header: React.FC<HeaderProps> = ({ language, switchLanguage }) => {

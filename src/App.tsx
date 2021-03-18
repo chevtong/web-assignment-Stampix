@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Header } from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 import {enTemplate, frTemplate, nlTemplate} from "./components/Templates/Templates"
-
 import './App.css';
 
 
@@ -11,7 +10,6 @@ const App: React.FC = () => {
   const [language, setLanguage] = useState<language>("en");
   const [currentTemplate, setCurrentTemplate] = useState<Template>(enTemplate);
   const [isSwitching, setIsSwithcing] = useState<isSwitching>(false)
-
 
   useEffect(() => {
 
@@ -28,7 +26,6 @@ const App: React.FC = () => {
   const switchLanguage: switchLanguage = (e) => {
 
     setLanguage(e.target.value);
-
     setIsSwithcing(true)
   };
 

@@ -1,5 +1,3 @@
-type switchLanguage = (event:event) => void;
-
 type isSwitching = Boolean;
 
 type language = string;
@@ -19,4 +17,5 @@ type Template = {
       buttonText: string,
     },
   };
-  
+
+type switchLanguage = (event:event) => void;

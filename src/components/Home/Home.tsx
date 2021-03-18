@@ -14,6 +14,7 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate, isSwitching }) => {
 
     return (
         <div className="home">
+
             <div className="consumers">
                 <div className={isSwitching ? "right-switch-text consumer-text" : "consumer-text"}>
                     <p>{currentTemplate.customer.title}</p>
@@ -21,13 +22,10 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate, isSwitching }) => {
                         <h3>{currentTemplate.customer.slogan}</h3>
                         <h3>{currentTemplate.customer.slogan2}</h3>
                     </div>
-                    <a href="https://stampix.com">
-                        <button className="home-button">
-                            {currentTemplate.customer.buttonText}
-                        </button>
+                    <a href="https://stampix.com" className="home-button">
+                        {currentTemplate.customer.buttonText}
                     </a>
                 </div>
-
                 <div className={isSwitching ? "right-switch-text consumer-img-container" : "consumer-img-container"}>
                     <img
                         className="consumer-phone-img"
@@ -44,14 +42,12 @@ export const Home: React.FC<HomeProps> = ({ currentTemplate, isSwitching }) => {
                         <h3>{currentTemplate.business.slogan}</h3>
                         <h3>{currentTemplate.business.slogan2}</h3>
                     </div>
-                    <a href="https://business.stampix.com">
-                        <button className="home-button">
-                            {currentTemplate.business.buttonText}
-                        </button>
+                    <a href="https://business.stampix.com" className="home-button">
+                        {currentTemplate.business.buttonText}
                     </a>
                 </div>
                 <div
-                    className={isSwitching?"left-switch-text business-logos-container": "business-logos-container"}>
+                    className={isSwitching ? "left-switch-text business-logos-container" : "business-logos-container"}>
                     <div className="img-container">
                         <img className="business-logos" src={orangeLogo} alt="Orange" />
                     </div>

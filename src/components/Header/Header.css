@@ -25,6 +25,7 @@ nav {
   font-size: 14px;
   line-height: 18.61px;
   font-family: futura;
+  cursor: pointer;
 }
 .nav-lang-button:hover {
   color: #b8e3be;

@@ -33,6 +33,6 @@ Src
 <br><br>
 
 ## The Tools:
-TypeScript &bull; React &bull; Visual Studio Code 
+TypeScript &bull; React &bull; Pure CSS &bull; Visual Studio Code 
 
 

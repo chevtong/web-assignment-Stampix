@@ -8,7 +8,6 @@
 }
 .home-button {
   width: 80%;
-  height: 4rem;
   background-color: #b8e3be;
   border: none;
   border-radius: 10px;
@@ -19,15 +18,18 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #003d67;
   margin: 1.5rem 0;
   align-self: end;
+  padding: 2rem 0;
 }
 .home-button:focus {
   outline: none;
 }
 .home-button:hover {
-  background-color: #b8e3be;
+  background-color: #003d66;
+  color: #b8e3be;
 }
 
 .consumers h3,
@@ -60,6 +62,7 @@
 .business-text {
   display: grid;
   align-content: space-between;
+  justify-items: center;
   padding: 1rem;
 }
 
@@ -98,10 +101,10 @@
 }
 
 .right-switch-text {
-  animation: move-right 1s linear 1;
+  animation: move-right 0.8s linear 1;
 }
 .left-switch-text {
-  animation: move-left 1s linear 1;
+  animation: move-left 0.8s linear 1;
 }
 
 @keyframes move-right {
@@ -126,21 +129,18 @@
   }
 }
 
-
 @media only screen and (max-width: 1024px) {
   .consumers,
   .business {
     grid-template-rows: 60% 40%;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .consumers h3,
   .business h3 {
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .home {
     grid-template-columns: 100%;
